@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   const userlogged = "Hello World";
-  const userloggedJSX = <strong> Syawal</strong>
+  const userloggedJSX = <strong> Hello</strong>
   return (
     <div className="App">
       {userlogged}

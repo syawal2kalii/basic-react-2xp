@@ -4,11 +4,10 @@ import './App.css';
 
 function App() {
   const userlogged = "Hello World";
-  const userloggedJSX = <strong> Syawal</strong>
+  const userloggedJSX = "Hello";
   return (
     <div className="App">
-      {userlogged}
-      {userloggedJSX}
+      
     </div>
   );
 }
