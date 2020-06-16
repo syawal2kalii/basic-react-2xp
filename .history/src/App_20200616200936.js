@@ -2,11 +2,10 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  
+ 
   return (
     <div class="Parentbox">
-      <FotoProduk/>
-      <ProdukInfo/>
+      
     </div>
   );
 }
@@ -19,11 +18,11 @@ function FotoProduk() {
   );
 }
 
-function ProdukInfo() {
+function ProdukInfo(){
   const category="Running";
   const price=700000;
-  return(
-      <div class="Deskripsi">
+  return (
+      <div className="Deskripsi">
         <p class="Cate">{category}</p>
         <h1 class="Title">Pinky Swag</h1>
         <p class="Price">IDR {price}</p>

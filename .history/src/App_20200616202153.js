@@ -7,6 +7,7 @@ function App() {
     <div class="Parentbox">
       <FotoProduk/>
       <ProdukInfo/>
+      
     </div>
   );
 }

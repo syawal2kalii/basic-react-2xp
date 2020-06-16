@@ -2,11 +2,12 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  
+  const category="Running";
+  const price=700000;
   return (
     <div class="Parentbox">
-      <FotoProduk/>
-      <ProdukInfo/>
+      
+      
     </div>
   );
 }
@@ -20,8 +21,6 @@ function FotoProduk() {
 }
 
 function ProdukInfo() {
-  const category="Running";
-  const price=700000;
   return(
       <div class="Deskripsi">
         <p class="Cate">{category}</p>

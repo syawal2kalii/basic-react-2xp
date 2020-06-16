@@ -6,7 +6,8 @@ function App() {
   return (
     <div class="Parentbox">
       <FotoProduk/>
-      <ProdukInfo/>
+      <
+      
     </div>
   );
 }
