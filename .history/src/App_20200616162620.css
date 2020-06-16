@@ -21,16 +21,3 @@
   float: left;
   margin-left: 30px;
 }
-
-.Deskripsi .Info{
-  line-height: 1.8;
-}
-
-.Deskripsi .Price{
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.Deskripsi .Cate{
-  color:#acaeb2
-}

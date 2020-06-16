@@ -1,0 +1,17 @@
+.Parentbox{
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 100px;
+}
+.Foto{
+  float: left;
+  width: 50%;
+  height: 700px;
+  background: #e3e9ee;
+}
+
+.Foto img{
+  width: 100%;
+  
+}
