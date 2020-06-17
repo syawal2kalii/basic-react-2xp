@@ -49,31 +49,18 @@ function TambahCart(e) {
 }
 
 function CheckDiscount(props) {
-<<<<<<< HEAD
-  const {isDiscount} = props;
-  if (isDiscount==="yes") {
-=======
   const { isDiscount } = props;
   if (isDiscount === "yes") {
->>>>>>> 10_map_json_review
     return (
       <p>Diskon 50% Off</p>
     );
   }
-<<<<<<< HEAD
-  else if(isDiscount==="no"){
-=======
   else if (isDiscount === "no") {
->>>>>>> 10_map_json_review
     return (
       <p>Belum ada diskon</p>
     );
   }
-<<<<<<< HEAD
-  else if(isDiscount==="coming"){
-=======
   else if (isDiscount === "coming") {
->>>>>>> 10_map_json_review
     return (
       <p>Akan ada diskon</p>
     );
@@ -103,7 +90,7 @@ function ReviewItems() {
   ];
   const listReview = users.map((itemReview) =>
     <div className="Item">
-      <img src={itemReview.photo} />
+      <img src={listReview.photo} />
       <div className="User">
         <h3>{itemReview.name}</h3>
         <p>{itemReview.review}</p>

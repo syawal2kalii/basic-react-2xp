@@ -7,7 +7,7 @@ function App() {
     <div class="Parentbox">
       <FotoProduk />
       <ProdukInfo isDiscount="yes" title="Nike" category="Running" />
-      <ReviewItems/>
+      <ReviewItem></ReviewItem>
     </div>
   );
 }
@@ -49,31 +49,18 @@ function TambahCart(e) {
 }
 
 function CheckDiscount(props) {
-<<<<<<< HEAD
-  const {isDiscount} = props;
-  if (isDiscount==="yes") {
-=======
   const { isDiscount } = props;
   if (isDiscount === "yes") {
->>>>>>> 10_map_json_review
     return (
       <p>Diskon 50% Off</p>
     );
   }
-<<<<<<< HEAD
-  else if(isDiscount==="no"){
-=======
   else if (isDiscount === "no") {
->>>>>>> 10_map_json_review
     return (
       <p>Belum ada diskon</p>
     );
   }
-<<<<<<< HEAD
-  else if(isDiscount==="coming"){
-=======
   else if (isDiscount === "coming") {
->>>>>>> 10_map_json_review
     return (
       <p>Akan ada diskon</p>
     );
@@ -91,7 +78,7 @@ function ReviewItems() {
     {
       "id": 2,
       "name": "Shayna",
-      "review": "Barang Bagus",
+      "review": "Harganya murah tapi kualitas bukan kaleng-kaleng nih. Keren.",
       "photo": "https://images.pexels.com/photos/764529/pexels-photo-764529.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
     },
     {
@@ -103,7 +90,7 @@ function ReviewItems() {
   ];
   const listReview = users.map((itemReview) =>
     <div className="Item">
-      <img src={itemReview.photo} />
+      <img src="https://images.pexels.com/photos/2232981/pexels-photo-2232981.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
       <div className="User">
         <h3>{itemReview.name}</h3>
         <p>{itemReview.review}</p>

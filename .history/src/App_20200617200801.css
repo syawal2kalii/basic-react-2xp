@@ -71,21 +71,4 @@
   height: 80px;
   background: #b1b1b1;
   border-radius: 11px;
-  float: left;
-  margin-right: 16px;
-}
-
-.Review-box .User p, h3{
-  margin: 0;
-}
-
-.Review-box .User h3{
-    padding-top: 10px;
-    margin-bottom: 8px;
-}
-
-.Review-box .Item{
-  width: 80%;
-  overflow: hidden;
-  margin-bottom: 24px;
 }
