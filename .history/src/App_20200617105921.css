@@ -48,9 +48,3 @@
   border-radius: 4px;
   transition: all 0.8s;
 }
-
-.Deskripsi a:hover {
-  color: #ffffff;
-  background: rgb(221, 135, 135);
-  transition: all 0.8s;
-}

@@ -36,6 +36,6 @@ function ProdukInfo(props) {
 }
 
 function TambahCart() {
-  console.log("tambahcart");
+  
 }
 export default App;
