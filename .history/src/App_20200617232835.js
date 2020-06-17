@@ -7,7 +7,16 @@ function App() {
     <div class="Parentbox">
       <FotoProduk />
       <ProdukInfo isDiscount="yes" title="Nike" category="Running" />
-      <ReviewItems/>
+      <div className="Review-box">
+        <h2>Reviews</h2>
+        <div className="Item">
+          <img alt="user" src="https://images.pexels.com/photos/2232981/pexels-photo-2232981.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></img>
+          <div className="User">
+            <h3>Syawal</h3>
+            <p>Harga Murah</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -78,7 +87,7 @@ function ReviewItems() {
     {
       "id": 2,
       "name": "Shayna",
-      "review": "Barang Bagus",
+      "review": "Harganya murah tapi kualitas bukan kaleng-kaleng nih. Keren.",
       "photo": "https://images.pexels.com/photos/764529/pexels-photo-764529.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
     },
     {
@@ -90,7 +99,7 @@ function ReviewItems() {
   ];
   const listReview = users.map((itemReview) =>
     <div className="Item">
-      <img src={itemReview.photo} />
+      <img src="https://images.pexels.com/photos/2232981/pexels-photo-2232981.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
       <div className="User">
         <h3>{itemReview.name}</h3>
         <p>{itemReview.review}</p>
