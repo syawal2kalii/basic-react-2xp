@@ -6,7 +6,7 @@ function App() {
   return (
     <div class="Parentbox">
       <FotoProduk/>
-      <ProdukInfo isDiscount="yes" title="Nike" category="Running" />
+      <ProdukInfo title="Nike" category="Running" />
     </div>
   );
 }
@@ -20,14 +20,14 @@ function FotoProduk() {
 }
 
 function ProdukInfo(props) {
-  const {category,title,isDiscount}=props;
+  const {category,title}=props;
   const price=700000;
   return(
       <div class="Deskripsi">
         <p class="Cate">{category}</p>
         <h1 class="Title">{title}</h1>
         <p class="Price">IDR {price}</p>
-        <CheckDiscount isDiscount={isDiscount}/>
+        <CheckDiscount isDiscount/>
         <p class="Info">
         lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
@@ -42,19 +42,13 @@ function TambahCart(e) {
 
 function CheckDiscount(props) {
   const {isDiscount} = props;
-  if (isDiscount=="yes") {
+  if (isDiscount) {
     return (
     <p>Diskon 50% Off</p>
     );
-  }
-  else if(isDiscount=="no"){
+  }else{
     return (
       <p>Belum ada diskon</p>
-    );
-  }
-  else if(isDiscount=="coming"){
-    return (
-      <p>Akan ada diskon</p>
     );
   }
 }

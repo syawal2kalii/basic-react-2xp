@@ -6,7 +6,7 @@ function App() {
   return (
     <div class="Parentbox">
       <FotoProduk/>
-      <ProdukInfo isDiscount="yes" title="Nike" category="Running" />
+      <ProdukInfo isDiscount="no" title="Nike" category="Running" />
     </div>
   );
 }
@@ -42,7 +42,7 @@ function TambahCart(e) {
 
 function CheckDiscount(props) {
   const {isDiscount} = props;
-  if (isDiscount=="yes") {
+  if (isDiscount=="yes" {
     return (
     <p>Diskon 50% Off</p>
     );

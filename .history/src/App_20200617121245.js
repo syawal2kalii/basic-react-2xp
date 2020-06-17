@@ -6,7 +6,7 @@ function App() {
   return (
     <div class="Parentbox">
       <FotoProduk/>
-      <ProdukInfo isDiscount="yes" title="Nike" category="Running" />
+      <ProdukInfo isDiscount="coming" title="Nike" category="Running" />
     </div>
   );
 }

@@ -42,7 +42,7 @@ function TambahCart(e) {
 
 function CheckDiscount(props) {
   const {isDiscount} = props;
-  if (isDiscount=="yes") {
+  if (isDiscount=="yes" {
     return (
     <p>Diskon 50% Off</p>
     );
