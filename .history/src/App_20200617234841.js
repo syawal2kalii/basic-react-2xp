@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Reviews from './Reviews';
+import ReviewsItems from './Reviews';
 
 function App() {
 
@@ -50,31 +50,18 @@ function TambahCart(e) {
 }
 
 function CheckDiscount(props) {
-<<<<<<< HEAD
-  const {isDiscount} = props;
-  if (isDiscount==="yes") {
-=======
   const { isDiscount } = props;
   if (isDiscount === "yes") {
->>>>>>> 10_map_json_review
     return (
       <p>Diskon 50% Off</p>
     );
   }
-<<<<<<< HEAD
-  else if(isDiscount==="no"){
-=======
   else if (isDiscount === "no") {
->>>>>>> 10_map_json_review
     return (
       <p>Belum ada diskon</p>
     );
   }
-<<<<<<< HEAD
-  else if(isDiscount==="coming"){
-=======
   else if (isDiscount === "coming") {
->>>>>>> 10_map_json_review
     return (
       <p>Akan ada diskon</p>
     );
