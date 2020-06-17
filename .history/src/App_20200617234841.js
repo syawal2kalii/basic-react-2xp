@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Reviews from './Reviews';
+import ReviewsItems from './Reviews';
 
 function App() {
 

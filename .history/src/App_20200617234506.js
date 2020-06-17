@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Reviews from './Reviews';
 
 function App() {
 
@@ -8,7 +7,7 @@ function App() {
     <div class="Parentbox">
       <FotoProduk />
       <ProdukInfo isDiscount="yes" title="Nike" category="Running" />
-      <Reviews/>
+      <ReviewItems/>
     </div>
   );
 }
@@ -67,5 +66,6 @@ function CheckDiscount(props) {
     );
   }
 }
+
 
 export default App;
