@@ -75,27 +75,4 @@ function CheckDiscount(props) {
     );
   }
 }
-
-function ReviewItems() {
-  const users = [
-    {
-        "id": 1,
-        "name": "Masayoshi",
-        "review": "Harganya murah tapi kualitas bukan kaleng-kaleng nih. Keren.",
-        "photo": "https://images.pexels.com/photos/2232981/pexels-photo-2232981.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-    },
-    {
-        "id": 2,
-        "name": "Shayna",
-        "review": "Harganya murah tapi kualitas bukan kaleng-kaleng nih. Keren.",
-        "photo": "https://images.pexels.com/photos/764529/pexels-photo-764529.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-    },
-    {
-        "id": 3,
-        "name": "Alqowy",
-        "review": "Harganya murah tapi kualitas bukan kaleng-kaleng nih. Keren.",
-        "photo": "https://images.pexels.com/photos/2100063/pexels-photo-2100063.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-    }
-];
-}
 export default App;

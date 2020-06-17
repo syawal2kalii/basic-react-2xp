@@ -9,13 +9,7 @@ function App() {
       <ProdukInfo isDiscount="yes" title="Nike" category="Running" />
       <div className="Review-box">
           <h2>Reviews</h2>
-          <div className="Item">
-            <img src="https://images.pexels.com/photos/2232981/pexels-photo-2232981.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></img>
-            <div className="User">
-              <h3>Syawal</h3>
-              <p>Harga Murah</p>
-            </div>
-          </div>
+          <div className=""></div>
       </div>
     </div>
   );
@@ -74,28 +68,5 @@ function CheckDiscount(props) {
       <p>Akan ada diskon</p>
     );
   }
-}
-
-function ReviewItems() {
-  const users = [
-    {
-        "id": 1,
-        "name": "Masayoshi",
-        "review": "Harganya murah tapi kualitas bukan kaleng-kaleng nih. Keren.",
-        "photo": "https://images.pexels.com/photos/2232981/pexels-photo-2232981.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-    },
-    {
-        "id": 2,
-        "name": "Shayna",
-        "review": "Harganya murah tapi kualitas bukan kaleng-kaleng nih. Keren.",
-        "photo": "https://images.pexels.com/photos/764529/pexels-photo-764529.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-    },
-    {
-        "id": 3,
-        "name": "Alqowy",
-        "review": "Harganya murah tapi kualitas bukan kaleng-kaleng nih. Keren.",
-        "photo": "https://images.pexels.com/photos/2100063/pexels-photo-2100063.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-    }
-];
 }
 export default App;
