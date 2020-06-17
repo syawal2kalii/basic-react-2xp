@@ -35,7 +35,7 @@ function ProdukInfo(props) {
   );
 }
 
-function TambahCart(e) {
-  console.log("membeli "+ e);
+function TambahCart() {
+  console.log("tambahcart");
 }
 export default App;
