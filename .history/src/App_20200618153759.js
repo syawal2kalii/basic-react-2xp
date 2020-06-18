@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="Parentbox">
       <FotoProduk />
-      <ProdukInfo isDiscount="yes"  title="Nike" category="Running" />
+      <ProdukInfo isDiscount="yes" discount={50} title="Nike" category="Running" />
       <Reviews/>
     </div>
   );
@@ -23,7 +23,7 @@ function FotoProduk() {
 }
 
 function ProdukInfo(props) {
-  const { category, title, isDiscount} = props;
+  const { category, title, isDiscount ,discount} = props;
   const price = 700000;
   const benefit = ["Tidak kusut terkena air", "Bahan lebih halus", "Tidak Gerah"];
   const listBenefits = benefit.map((itembenefit) =>
@@ -34,14 +34,14 @@ function ProdukInfo(props) {
       <p className="Cate">{category}</p>
       <h1 className="Title">{title}</h1>
       <p className="Price">IDR {price}</p>
-      <CheckDiscount discount={75} isDiscount={isDiscount} />
+      <CheckDiscount isDiscount={isDiscount} />
       <p className="Info">
         lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
       <ul>
        {listBenefits}
       </ul>
-      <a onClick={(e) => TambahCart(title, e)} href="">Add to Cart</a>
+      <a onClick={(e) => TambahCart(title, e)} href="#">Add to Cart</a>
     </div>
   );
 }
@@ -51,7 +51,7 @@ function TambahCart(e) {
 }
 
 function CheckDiscount(props) {
-  const {isDiscount,discount} = props;
+  const {isDiscount} = props;
   if (isDiscount==="yes") {
     return (
     <p>Diskon {discount}% Off</p>
@@ -68,9 +68,5 @@ function CheckDiscount(props) {
     );
   }
 }
-
-CheckDiscount.propTypes = {
-discount : PropTypes.number
-};
 
 export default App;

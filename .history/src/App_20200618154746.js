@@ -41,7 +41,7 @@ function ProdukInfo(props) {
       <ul>
        {listBenefits}
       </ul>
-      <a onClick={(e) => TambahCart(title, e)} href="">Add to Cart</a>
+      <a onClick={(e) => TambahCart(title, e)} href="#">Add to Cart</a>
     </div>
   );
 }
@@ -69,8 +69,8 @@ function CheckDiscount(props) {
   }
 }
 
-CheckDiscount.propTypes = {
-discount : PropTypes.number
-};
+CheckDiscount.PropTypes = {
+  discount : PropTypes.number
+}
 
 export default App;

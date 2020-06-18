@@ -41,7 +41,7 @@ function ProdukInfo(props) {
       <ul>
        {listBenefits}
       </ul>
-      <a onClick={(e) => TambahCart(title, e)} href="">Add to Cart</a>
+      <a onClick={(e) => TambahCart(title, e)} href="#">Add to Cart</a>
     </div>
   );
 }
